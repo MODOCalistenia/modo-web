@@ -1,0 +1,36 @@
+@font-face {
+    font-family: Arist;
+    src: url("./static/aristotelica/Aristotelica Display DemiBold Trial.ttf");
+}
+
+:root {
+    --black: #252525;
+    --white: #D0D0D0;
+}
+html {
+    font-family: Arist, Roboto, Arial, Helvetica, sans-serif;
+    background-color: var(--black);
+    font-size: 1.5em
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+}
+main {
+    width: 40vw;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+    margin-bottom: 1em;
+}
