@@ -11,7 +11,7 @@
 html {
     font-family: Arist, Roboto, Arial, Helvetica, sans-serif;
     background-color: var(--black);
-    font-size: 1.5em;
+    font-size: 2vw;
     color: var(--white);
 }
 
@@ -22,6 +22,7 @@ body {
     background: #252525;
     background: linear-gradient(180deg, #252525 0%, #252525 80%, #ff5e00 180%);
     overflow: hidden;
+    margin: 0;
 }
 
 img {
@@ -47,21 +48,13 @@ main {
   }
 
 .diamond:before {
-    background: #ffffff3f none repeat scroll 0 0;
-    border-radius: 10px;
-    border-style: solid;
-    border-width: 0;
-    box-shadow: 0 0 10px 10px #ffffff;
+    background: #ffffff3f;
     content: "";
     filter: blur(20px);
     height: 140%;
     left: -30%;
-    margin-left: 0;
-    margin-top: 0;
     position: absolute;
-    top: 0;
     width: 25px;
-    transition: all .8s;
     opacity: .1;
     animation: light 10s infinite ease-in;
 }
@@ -95,16 +88,18 @@ main {
     z-index: 0
 }
 
-@media (max-width: 1294px) {
+@media only screen and (orientation: portrait){
     h1 {
-        font-size: 3em;
+        font-size: 7vw;
     }
+
     img {
         width: 75vw;
         margin-bottom: 3em;
     }
-    .background {
-        flex-direction: column
+
+    .background{
+        flex-direction: column;
     }
 }
 #d2:before {
