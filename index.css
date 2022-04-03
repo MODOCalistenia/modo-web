@@ -38,26 +38,6 @@ main {
     z-index: 1;
 }
 
-.diamond {
-    width: 382px;
-    height: 382px;
-    background: #232323;
-    background: linear-gradient(-45deg, #3233347f 0%, #32333400 100%);
-    transform: rotate(45deg);
-    overflow: hidden;
-  }
-
-.diamond:before {
-    background: #ffffff3f;
-    content: "";
-    filter: blur(20px);
-    height: 140%;
-    left: -30%;
-    position: absolute;
-    width: 25px;
-    opacity: .1;
-    animation: light 10s infinite ease-in;
-}
 
 .diamond {
     width: 382px;
@@ -69,13 +49,14 @@ main {
   }
 
 .diamond:before {
+    content:"" ;
     background: #ffffff3f;
     box-shadow: 0 0 10px 10px #ffffff;
     filter: blur(20px);
     height: 140%;
     left: -30%;
     position: absolute;
-    width: 25px;
+    width: 1vw;
     transition: all .8s;
     opacity: .1;
     animation: light 10s infinite ease-in;
@@ -84,7 +65,7 @@ main {
 .background {
     position: absolute;
     display: flex;
-    top: 7em;
+    top: 15vh;
     z-index: 0
 }
 
@@ -99,9 +80,33 @@ main {
     }
 
     .background{
+        top: 0;
         flex-direction: column;
     }
+
+    .diamond {
+        width: 600px;
+        height: 600px;
+    }
+
+    #d2:before {
+        animation-delay: 1125ms;
+    }
+
+    #d3:before {
+        animation-delay: 2250ms;
+    }
+
+    #d4:before {
+        animation-delay: 3375ms;
+    }
+
+    #d5:before {
+        animation-delay: 4500ms;
+    }
+
 }
+
 #d2:before {
     animation-delay: 1093ms;
 }
@@ -117,6 +122,7 @@ main {
 #d5:before {
     animation-delay: 4372ms;
 }
+
 @keyframes light {
 	0% {
 		left: -50%;
